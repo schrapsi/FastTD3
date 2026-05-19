@@ -330,6 +330,8 @@ dependencies = [
     { name = "matplotlib" },
     { name = "moviepy" },
     { name = "numpy" },
+    { name = "opencv-contrib-python-headless" },
+    { name = "opencv-python-headless" },
     { name = "pandas" },
     { name = "protobuf" },
     { name = "pygame" },
@@ -343,8 +345,6 @@ dependencies = [
 [package.dev-dependencies]
 humanoid = [
     { name = "humanoid-bench" },
-    { name = "opencv-contrib-python-headless" },
-    { name = "opencv-python-headless" },
 ]
 
 [package.metadata]
@@ -355,6 +355,8 @@ requires-dist = [
     { name = "matplotlib" },
     { name = "moviepy" },
     { name = "numpy", specifier = "<2.0" },
+    { name = "opencv-contrib-python-headless", specifier = ">=4.11.0.86" },
+    { name = "opencv-python-headless", specifier = ">=4.11.0.86" },
     { name = "pandas" },
     { name = "protobuf" },
     { name = "pygame" },
@@ -366,11 +368,8 @@ requires-dist = [
 ]
 
 [package.metadata.requires-dev]
-humanoid = [
-    { name = "humanoid-bench", editable = "/home/simeon/code/humanoid-bench" },
-    { name = "opencv-contrib-python-headless", specifier = ">=4.11.0.86" },
-    { name = "opencv-python-headless", specifier = ">=4.11.0.86" },
-]
+humanoid = [{ name = "humanoid-bench", editable = "/home/simeon/code/humanoid-bench" }]
+mujoco = []
 
 [[package]]
 name = "filelock"

@@ -18,7 +18,9 @@ dependencies = [
   "wandb",
   "tensordict>=0.12.3",
   "tyro",
-  "loguru"
+  "loguru",
+  "opencv-python-headless>=4.11.0.86",
+  "opencv-contrib-python-headless>=4.11.0.86"
 ]
 
 [tool.uv.sources]
@@ -29,9 +31,10 @@ humanoid-bench= { path = "/home/simeon/code/humanoid-bench", editable=true}
 
 [dependency-groups]
 humanoid = [
-  "humanoid-bench",
-  "opencv-python-headless>=4.11.0.86",
-  "opencv-contrib-python-headless>=4.11.0.86"
+  "humanoid-bench"
+]
+mujoco = [
+  
 ]
 
 
